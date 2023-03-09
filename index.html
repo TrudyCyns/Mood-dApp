@@ -100,12 +100,9 @@
       }
 
       async function setMood() {
-        console.log("Set Mood button pressed");
         const mood = document.getElementById("mood").value;
-        console.log("Entered mood: ", mood);
         const setMoodPromise = MoodContract.setMood(mood);
         await setMoodPromise;
-        console.log("Mood set!");
       }
     </script>
   </body>
